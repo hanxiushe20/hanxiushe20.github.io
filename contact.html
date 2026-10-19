@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们与站长留言 - 含羞草在线社区</title>
+    <meta name="description" content="联系含羞草在线社区运营团队。无论你是视频资源失效反馈、商务合作洽谈、自制内容版权申诉，还是入驻创作者咨询，都可以通过本页面的表单或官方邮箱与我们取得联系。">
+    <meta name="keywords" content="含羞草在线联系方式, 站长留言, 视频失效反馈, 社区商务合作, 版权申诉, 创作者入驻">
+    <link rel="canonical" href="https://example.com/contact.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">含羞草在线</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="videos.html">视频大厅</a></li>
+                    <li><a href="community.html">交流社区</a></li>
+                    <li><a href="upload.html">发布视频</a></li>
+                    <li><a href="guidelines.html">社区规范</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html" class="active">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> &gt; <span>联系与反馈</span>
+            </div>
+
+            <section class="page-header-section">
+                <h1>与含羞草在线团队取得联系</h1>
+                <p>老站长日常维护，有问必答。不管是催更、报错还是瞎扯淡，随时找我们！</p>
+            </section>
+
+            <div class="contact-grid">
+                <article class="contact-form-box">
+                    <h2>在线留言板</h2>
+                    <p class="form-desc">发帖或者私信没反应？直接在这里给站长留言吧。通常 24 小时内人工回复，节假日可能会去网吧开黑，回复稍慢请见谅。</p>
+                    
+                    <form id="contactForm" class="site-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="contactName">您的称呼 / ID：</label>
+                            <input type="text" id="contactName" name="name" placeholder="比如：隔壁老王、热心网友" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">电子邮箱：</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="方便我们给您回信（选填）">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactType">反馈类型：</label>
+                            <select id="contactType" name="type">
+                                <option value="bug">死链/视频无法播放反馈</option>
+                                <option value="cooperate">商务合作与广告赞助</option>
+                                <option value="copyright">侵权投诉/内容下架</option>
+                                <option value="creator">创作者入驻与权限申请</option>
+                                <option value="other">其他闲聊与建议</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">留言内容：</label>
+                            <textarea id="contactMessage" name="message" rows="6" placeholder="请详细描述您遇到的问题，如果是视频失效，请附带视频页面的链接地址，方便老铁快速定位修复..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">发送留言</button>
+                    </form>
+                </article>
+
+                <aside class="contact-info-box">
+                    <div class="info-card">
+                        <h3>站长直达通道</h3>
+                        <p><strong>官方站长邮箱：</strong><br>admin@hxc-online-example.com</p>
+                        <p><strong>商务合作对接：</strong><br>coop@hxc-online-example.com</p>
+                        <p><strong>版权及投诉专属：</strong><br>abuse@hxc-online-example.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>常见问题快速指引</h3>
+                        <ul class="faq-quick-list">
+                            <li><a href="videos.html">视频加载慢？去视频大厅换个线路试试</a></li>
+                            <li><a href="upload.html">想自己发视频？看看发布视频页面的说明</a></li>
+                            <li><a href="guidelines.html">发帖老是被删？先读一遍社区规范</a></li>
+                            <li><a href="about.html">想了解我们是谁？去关于我们看看</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>值班说明</h3>
+                        <p>本站由几个热爱视频分享的技术宅业余维护，没有庞大的客服团队。如果邮件回复慢了，请去 <a href="community.html">交流社区</a> 发个帖子艾特站长，往往能得到热心网友的先期解答！</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3>关于含羞草在线</h3>
+                <p>一个由视频爱好与社区分享精神驱动的非官方小站。聚拢各路自制大神与优质资源，拒绝空洞套话，只提供实用的视觉体验与干货交流。</p>
+            </div>
+            <div class="footer-col">
+                <h3>快速导航</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="videos.html">视频大厅</a></li>
+                    <li><a href="community.html">交流社区</a></li>
+                    <li><a href="upload.html">发布视频</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>免责与条款</h3>
+                <ul>
+                    <li><a href="guidelines.html">社区规范</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系与反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 含羞草在线社区 (hxc-online-example.com). All Rights Reserved. 站长日常辛苦，转载请注明出处。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

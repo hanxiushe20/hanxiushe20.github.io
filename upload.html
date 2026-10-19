@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源投稿中心与创作者激励计划 - 含羞草在线</title>
+    <meta name="description" content="欢迎来到含羞草在线视频投稿中心。支持mp4、mkv等主流格式极速上传，分享你的原创自制影视剪辑、生活Vlog与精彩短片，与社区几万名影视爱好者共同交流互动。">
+    <meta name="keywords" content="含羞草在线投稿,自制视频分享,视频上传中心,创作者社区,高清视频发布">
+    <link rel="canonical" href="https://www.hxc-online.com/upload.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo">含羞草在线</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="videos.html">视频库</a></li>
+                    <li><a href="community.html">社区交流</a></li>
+                    <li><a href="upload.html" class="active">发布投稿</a></li>
+                    <li><a href="guidelines.html">版规指引</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系站长</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="breadcrumb">
+            <a href="index.html">首页</a> &gt; <span>视频投稿中心</span>
+        </div>
+
+        <section class="page-header-box">
+            <h1>创作者视频投稿中心</h1>
+            <p class="subtitle">好内容需要被看见。老站长亲测：不限速、免审核过夜，按规范提交基本秒过！</p>
+        </section>
+
+        <div class="upload-layout">
+            <section class="upload-form-section card">
+                <h2>第一步：选择视频文件上传</h2>
+                <form id="videoUploadForm" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="form-group dropzone-box" id="dropZone">
+                        <div class="dropzone-text">
+                            <span class="upload-icon">📁</span>
+                            <p>点击选择视频，或将视频文件拖拽到此处</p>
+                            <small>支持 MP4, MKV, AVI, MOV 格式，单文件建议控制在 2GB 以内，码率不限。</small>
+                        </div>
+                        <input type="file" id="videoFile" name="videoFile" accept="video/mp4,video/mkv,video/avi,video/mov" required>
+                    </div>
+                    <div id="fileInfo" class="file-info-box" style="display:none;">
+                        <p>已选文件：<span id="fileName"></span> (<span id="fileSize"></span>)</p>
+                        <div class="progress-bar"><div class="progress" id="uploadProgress"></div></div>
+                    </div>
+
+                    <h2>第二步：填写作品详细信息</h2>
+                    <div class="form-group">
+                        <label for="videoTitle">视频标题 <span class="required">*</span></label>
+                        <input type="text" id="videoTitle" name="videoTitle" placeholder="请起一个吸引人的标题，如：【自制】经典老剧高清修复剪辑合集" required>
+                        <span class="form-tip">不要起标题党，内容切合实际更容易获得首页推荐位。</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="videoCategory">选择分类 <span class="required">*</span></label>
+                        <select id="videoCategory" name="videoCategory" required>
+                            <option value="">-- 请选择所属专区 --</option>
+                            <option value="original">原创自制短片</option>
+                            <option value="collection">影视高光混剪</option>
+                            <option value="vlog">日常Vlog纪实</option>
+                            <option value="tech">实用教程分享</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="videoTags">标签设定 (用空格隔开)</label>
+                        <input type="text" id="videoTags" name="videoTags" placeholder="如：高清 修复 影视剪辑 经典收藏">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="videoDesc">作品简介与互动说明 <span class="required">*</span></label>
+                        <textarea id="videoDesc" name="videoDesc" rows="6" placeholder="简单介绍一下这部视频的来源、看点或者想和社区老铁们说的话，支持 Markdown 简单排版..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" name="agreeRules" required> 我已阅读并同意 <a href="guidelines.html" target="_blank">《含羞草在线社区内容规范及免责声明》</a>，承诺不上传违规违法及侵权内容。
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">立即提交审核并发布</button>
+                        <button type="reset" class="btn-secondary">重置表单</button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="upload-sidebar">
+                <div class="card sidebar-widget">
+                    <h3>💡 投稿避坑与加精指南</h3>
+                    <ul class="tips-list">
+                        <li><strong>格式建议：</strong> 尽量封装为 MP4 (H.264 + AAC 编码)，网页端兼容性最好，手机电脑都能直接流畅看。</li>
+                        <li><strong>关于封面：</strong> 系统会自动截取视频第 5 秒作为封面，如需自定义封面图可在发布后在个人中心修改。</li>
+                        <li><strong>审核机制：</strong> 正常工作日白天投稿一般 30 分钟内过审。夜间投稿可能会顺延到次日上午。</li>
+                        <li><strong>积分奖励：</strong> 优质投稿通过后系统自动奖励社区积分，可用于下载站内其他稀缺网盘资源。</li>
+                    </ul>
+                </div>
+
+                <div class="card sidebar-widget">
+                    <h3>🔥 最近热门投稿动态</h3>
+                    <ul class="recent-uploads-list">
+                        <li>
+                            <a href="video-detail.html">【4K修复】九十年代港片黄金期合集</a>
+                            <span class="uploader">by 追风少年 (2小时前)</span>
+                        </li>
+                        <li>
+                            <a href="video-detail.html">个人独立自制科幻短片《回响》</a>
+                            <span class="uploader">by 导演老张 (5小时前)</span>
+                        </li>
+                        <li>
+                            <a href="video-detail.html">周末海边自驾游 Vlog 实录</a>
+                            <span class="uploader">by 糖果小饼干 (昨天)</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>关于含羞草在线</h4>
+                <p>一个由视频爱好者与独立创作者共同维护的纯净分享社区。拒绝浮躁，只产出有质量、有温度的视听内容。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="videos.html">最新视频</a></li>
+                    <li><a href="community.html">社区交流</a></li>
+                    <li><a href="guidelines.html">版规指引</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系与支持</h4>
+                <ul>
+                    <li><a href="contact.html">联系站长</a></li>
+                    <li><a href="upload.html">发布投稿</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2026 含羞草在线社区 (hxc-online.com). All Rights Reserved. 保持初心，自由分享。</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
